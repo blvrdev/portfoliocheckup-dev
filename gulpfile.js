@@ -36,19 +36,6 @@ var globs = manifest.globs;
 // - `project.css` - Array of first-party CSS assets.
 var project = manifest.getProjectGlobs();
 
-// CLI options
-var enabled = {
-  // Enable static asset revisioning when `--production`
-  rev: argv.production,
-  // Disable source maps when `--production`
-  maps: !argv.production,
-  // Fail styles task on error when `--production`
-  failStyleTask: argv.production
-};
-
-// Path to the compiled assets manifest in the dist directory
-var revManifest = path.dist + 'assets.json';
-
 // ## Reusable Pipelines
 // See https://github.com/OverZealous/lazypipe
 
@@ -61,12 +48,6 @@ var revManifest = path.dist + 'assets.json';
 // ```
 var cssTasks = function(filename) {
   return lazypipe()
-    .pipe(function() {
-      return $.if(!enabled.failStyleTask, $.plumber());
-    })
-    .pipe(function() {
-      return $.if(enabled.maps, $.sourcemaps.init());
-    })
       .pipe(function() {
         return $.if('*.less', $.less());
       })
@@ -78,13 +59,7 @@ var cssTasks = function(filename) {
             'opera 12'
           ]
         }
-      })
-    .pipe(function() {
-      return $.if(enabled.rev, $.rev());
-    })
-    .pipe(function() {
-      return $.if(enabled.maps, $.sourcemaps.write('.'));
-    })();
+      })();
 };
 
 // ### JS processing pipeline
@@ -96,17 +71,8 @@ var cssTasks = function(filename) {
 // ```
 var jsTasks = function(filename) {
   return lazypipe()
-    .pipe(function() {
-      return $.if(enabled.maps, $.sourcemaps.init());
-    })
     .pipe($.concat, filename)
-    .pipe($.uglify)
-    .pipe(function() {
-      return $.if(enabled.rev, $.rev());
-    })
-    .pipe(function() {
-      return $.if(enabled.maps, $.sourcemaps.write('.'));
-    })();
+    .pipe($.uglify)();
 };
 
 // ### Write to rev manifest
@@ -114,12 +80,7 @@ var jsTasks = function(filename) {
 // See https://github.com/sindresorhus/gulp-rev
 var writeToManifest = function(directory) {
   return lazypipe()
-    .pipe(gulp.dest, path.dist + directory)
-    .pipe($.rev.manifest, revManifest, {
-      base: path.dist,
-      merge: true
-    })
-    .pipe(gulp.dest, path.dist)();
+    .pipe(gulp.dest, path.dist + directory)();
 };
 
 // ## Gulp tasks
@@ -127,18 +88,14 @@ var writeToManifest = function(directory) {
 
 // ### Styles
 // `gulp styles` - Compiles, combines, and optimizes Bower CSS and project CSS.
-// By default this task will only log a warning if a precompiler error is
-// raised. If the `--production` flag is set: this task will fail outright.
 gulp.task('styles', ['wiredep'], function() {
   var merged = merge();
   manifest.forEachDependency('css', function(dep) {
     var cssTasksInstance = cssTasks(dep.name);
-    if (!enabled.failStyleTask) {
-      cssTasksInstance.on('error', function(err) {
-        console.error(err.message);
-        this.emit('end');
-      });
-    }
+    cssTasksInstance.on('error', function(err) {
+      console.error(err.message);
+      this.emit('end');
+    });
     merged.add(gulp.src(dep.globs, {base: 'styles'})
       .pipe(cssTasksInstance));
   });
@@ -193,10 +150,6 @@ gulp.task('jshint', function() {
     .pipe($.jshint.reporter('fail'));
 });
 
-// ### Clean
-// `gulp clean` - Deletes the build folder entirely.
-gulp.task('clean', require('del').bind(null, [path.dist]));
-
 // ### Watch
 gulp.task('watch', function() {
   gulp.watch([path.source + 'styles/**/*'], ['styles']);
@@ -225,7 +178,7 @@ gulp.task('wiredep', function() {
 });
 
 // ### Gulp
-// `gulp` - Run a complete build. To compile for production run `gulp --production`.
-gulp.task('default', ['clean'], function() {
+// `gulp` - Run a complete build.
+gulp.task('default', function() {
   gulp.start('build');
 });
