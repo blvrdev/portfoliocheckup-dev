@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "main.js": {
+      "files": [
+      	"scripts/plugins/**/*",
+        "scripts/main.js"
+      ],
+      "main": true
+    },
+    "main.css": {
+      "files": [
+      	"styles/plugins/**/*",
+        "styles/main.less"
+      ],
+      "main": true
+    },
+    "jquery.js": {
+      "bower": ["jquery"]
+    }
+  }
+}

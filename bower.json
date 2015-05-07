@@ -1,0 +1,13 @@
+{
+  "name": "portfoliocheckup",
+  "authors": [
+    "Diego Armijo <diego@blvr.com>",
+    "Eric Johnson <eric@blvr.com>"
+  ],
+  "private": true,
+  "dependencies": {
+    "jquery": "1.11.3",
+    "bootstrap": "3.3.4",
+    "jquery-backstretch": "~2.0.4"
+  }
+}
