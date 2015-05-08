@@ -3,15 +3,17 @@ layout: default
 ---
 <script>
     var backstretch_images = [
-        { target: '.lead-content', image: '{{ site.baseurl }}/assets/images/header.jpg' },
+        // { target: '.lead-content', image: '{{ site.baseurl }}/assets/images/header.jpg' },
         { target: '.money-master', image: '{{ site.baseurl }}/assets/images/robbins.jpg' },
         { target: '.video', image: '{{ site.baseurl }}/assets/images/video.jpg' }
     ];
 </script>
 
+<img id="headerimg" src="{{ site.baseurl }}/assets/images/header.jpg">
+
 <div class="lead-content">
     <div class="section-body">
-        <div class="container">
+        <div class="container wow fadeIn">
             <h1>How healthy is your portfolio? <br/>A <strong>free</strong> checkup will tell.</h1>
 
             <h2>Quickly scan your accounts for excessive fees, poor performance, and other red flags.<br/>Then learn how
@@ -46,7 +48,8 @@ layout: default
                 </div>
             </div>
         </div>
-        <div class="col-md-5">
+        <div class="col-md-5 wow fadeInRight">
+
             <h2>Expose the fees that are eroding your savings</h2>
 
             <p>Immediately see how much you are really paying in fees&mdash;and how to immediately take action to cut
@@ -60,12 +63,12 @@ layout: default
 </div>
 
 <div class="grayback">
-    <div class="content-padding tablet-background">
+    <div class="tablet-padding tablet-background">
         <div class="container content">
-            <div class="col-md-7 pull-right top-div">
+            <div class="col-md-7 col-sm-12 pull-right top-div">
                 <img id="tablethide" src="{{ site.baseurl }}/assets/images/tablet.jpg">
             </div>
-            <div class="col-md-5">
+            <div class="col-md-5 col-sm-12 clear-right wow fadeInLeft">
                 <h2>Bull markets always come to end. Are you ready?</h2>
 
                 <p class="solo">Founded on our seasoned industry experience, our CheckUp offers an overview of your
@@ -85,7 +88,7 @@ layout: default
         <div class="col-md-5 top-div">
             <img src="{{ site.baseurl }}/assets/images/bubbles.png">
         </div>
-        <div class="col-md-6 col-md-offset-1">
+        <div class="col-md-6 col-md-offset-1 wow fadeInRight">
             <h2>See all of your accounts in one place.</h2>
 
             <p class="solo">Many people have accounts at more than 1 firm&mdash;and often a 401k to boot. Portfolio
@@ -102,7 +105,7 @@ layout: default
         <div class="col-md-5 col-sm-12 top-div col-md-offset-1 pull-right">
             <img src="{{ site.baseurl }}/assets/images/lock.jpg">
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 wow fadeInLeft">
             <h2>Bank-level security means worry-free service.</h2>
 
             <p class="solo">Using 128-bit bank-level encryption, we view&mdash;not access&mdash;your accounts. Our
@@ -117,19 +120,19 @@ layout: default
 
 <div class="list content-padding">
     <div class="container">
-        <h2>Four Simple Steps to Your Portfolio Diagnosis</h2>
+        <h2 class="wow fadeInUp">Four Simple Steps to Your Portfolio Diagnosis</h2>
         <img id="listimg" src="{{ site.baseurl }}/assets/images/list.png">
 
         <div class="clearfix">
             <div class="col-md-3 col-sm-12">
                 <img class="small-number" src="{{ site.baseurl }}/assets/images/1.png">
-                <span>Create your<br />profile</span>
+                <span>Create your<br/>profile</span>
 
                 <p>Tell us more about yourself. Provide your age, your goals, and your risk tolerance.</p>
             </div>
             <div class="col-md-3 col-sm-12">
                 <img class="small-number" src="{{ site.baseurl }}/assets/images/2.png">
-                <span>Link your<br />accounts</span>
+                <span>Link your<br/>accounts</span>
 
                 <p>Securely allow us to scan your accounts so we can accurately measure the health of your portfolio.
                     Using commonplace technology with budgeting tools and other online account services, this linking
@@ -137,14 +140,14 @@ layout: default
             </div>
             <div class="col-md-3 col-sm-12">
                 <img class="small-number" src="{{ site.baseurl }}/assets/images/3.png">
-                <span>Read your<br />analysis</span>
+                <span>Read your<br/>analysis</span>
 
                 <p>Gauge your portfolio's health. You can see how your portfolio compares with other approaches, how
                     much you're paying in fees, and whether your assets are wisely allocated.</p>
             </div>
             <div class="col-md-3 col-sm-12">
                 <img class="small-number" src="{{ site.baseurl }}/assets/images/4.png">
-                <span>Connect with<br />anadvisor</span>
+                <span>Connect with<br/>anadvisor</span>
 
                 <p>Connect with an approved independent advisor (a fiduciary, not a broker) who works solely in your
                     best interests to remedy the issues your CheckUp uncovers. Once you move forward with an advisor,
@@ -157,7 +160,7 @@ layout: default
 <div class="video">
     <div class="content container">
         <h2>Watch the demo</h2>
-        <a href="" id="play"><img src="{{ site.baseurl }}/assets/images/play.png"></a>
+        <a href="" id="play" class="btn btn-lg" data-toggle="modal" data-target="#myModal"><img src="{{ site.baseurl }}/assets/images/play.png"></a>
     </div>
 </div>
 
@@ -165,10 +168,10 @@ layout: default
     <div class="table-cell">
         <div class="container">
             <div class="col-md-4"></div>
-            <div class="col-md-3">
+            <div class="col-md-3 wow fadeIn">
                 <img id="book" src="{{ site.baseurl }}/assets/images/book.png">
             </div>
-            <div class="col-md-4 col-md-offset-1 money-content">
+            <div class="col-md-4 wow fadeInRight col-md-offset-1 money-content">
                 <img src="{{ site.baseurl }}/assets/images/money.png">
 
                 <p>Portfolio checkup is featured in Tony Robbins' #1 New York Times Bestselling Book</p>
@@ -185,5 +188,15 @@ layout: default
 
         <a href="#" class="button btn-orange">Sign Me Up</a>
         <a href="#" class="button btn-blue">Login to my account</a>
+    </div>
+</div>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="videoWrapper">
+                <iframe id="vimeoid" src="https://player.vimeo.com/video/123764014?byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+        </div>
     </div>
 </div>
