@@ -1,28 +1,5 @@
-<!DOCTYPE html>
-<html>
-<body>
-<head>
-    <title>PORTFOLIO CHECKUP</title>
-    <link rel="shortcut icon" href="assets/images/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <link rel="stylesheet" type="text/css" href="assets/less/main.css">
-    <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/35ec010d-ba67-4d62-8e32-cbeed5bf84ff.css"/>
-    <script language="javascript" type="text/javascript" src="/assets/js/plugins.js"></script>
-    <script language="javascript" type="text/javascript" src="assets/js/main.js"></script>
-</head>
-
-<div class="nav">
-    <div class="container">
-        <img src="assets/images/logo.png" id="logo">
-
-        <ul id="navigation">
-            <li><a href="#">Demo</a></li>
-            <li><a href="#">Login</a></li>
-            <li><a href="#" class="active">Get Started</a></li>
-        </ul>
-    </div>
-</div>
+{% include head.html %}
+{% include nav.html %}
 
 <div class="lead-content">
     <div class="section-body">
@@ -203,18 +180,4 @@
     </div>
 </div>
 
-<footer class="clearfix">
-    <div class="container clearfix">
-        <p id="final">&copy; 2015 Portfoio Checkup. All rights reserved.</p>
-
-        <div class="social">
-            <a href="#" target="_blank"><span class="icon-facebook"></span></a>
-            <a href="#" target="_blank"><span class="icon-twitter"></span></a>
-            <a href="#" target="_blank"><span class="icon-linkedin2"></span></a>
-            <a href="#" target="_blank"><span class="icon-youtube"></span></a>
-        </div>
-    </div>
-</footer>
-
-</body>
-</html>
+{% include footer.html %}

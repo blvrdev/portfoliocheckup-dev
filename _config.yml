@@ -1,0 +1,1 @@
+exclude : [node_modules, bower_components, bower.json, Gemfile, Gemfile.lock, gulpfile.js, package.json, README.md]

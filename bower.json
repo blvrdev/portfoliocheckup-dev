@@ -9,5 +9,8 @@
     "jquery": "1.11.3",
     "bootstrap": "3.3.4",
     "jquery-backstretch": "~2.0.4"
+  },
+  "resolutions": {
+    "jquery": "1.11.3"
   }
 }
