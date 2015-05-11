@@ -3,13 +3,15 @@ layout: default
 ---
 <script>
     var backstretch_images = [
-        // { target: '.lead-content', image: '{{ site.baseurl }}/assets/images/header.jpg' },
+        { target: '.lead-content', image: '{{ site.baseurl }}/assets/images/header.jpg' },
         { target: '.money-master', image: '{{ site.baseurl }}/assets/images/robbins.jpg' },
         { target: '.video', image: '{{ site.baseurl }}/assets/images/video.jpg' }
     ];
 </script>
 
+{% comment %}
 <img id="headerimg" src="{{ site.baseurl }}/assets/images/header.jpg">
+{% endcomment %}
 
 <div class="lead-content">
     <div class="section-body">
@@ -69,7 +71,7 @@ layout: default
                 <img id="tablethide" src="{{ site.baseurl }}/assets/images/tablet.jpg">
             </div>
             <div class="col-md-5 col-sm-12 clear-right wow fadeInLeft">
-                <h2>Bull markets always come to end. Are you ready?</h2>
+                <h2>Bull markets always come to an end. Are you ready?</h2>
 
                 <p class="solo">Founded on our seasoned industry experience, our CheckUp offers an overview of your
                     asset
@@ -168,10 +170,10 @@ layout: default
     <div class="table-cell">
         <div class="container">
             <div class="col-md-4"></div>
-            <div class="col-md-3 wow fadeIn">
+            <div class="col-md-4 wow fadeIn">
                 <img id="book" src="{{ site.baseurl }}/assets/images/book.png">
             </div>
-            <div class="col-md-4 wow fadeInRight col-md-offset-1 money-content">
+            <div class="col-md-4 wow fadeInRight money-content">
                 <img src="{{ site.baseurl }}/assets/images/money.png">
 
                 <p>Portfolio checkup is featured in Tony Robbins' #1 New York Times Bestselling Book</p>
