@@ -22,6 +22,11 @@ $(document).ready(function(){
         $('.modal:visible').each(centerModal);
     });
 
+    $('#myModal2').on('show.bs.modal', centerModal);
+    $(window).on("resize", function () {
+        $('.modal:visible').each(centerModal);
+    });
+
     $("#myModal").on('hidden.bs.modal', function (e) {
         $("#myModal iframe").attr("src", $("#myModal iframe").attr("src"));
     });
