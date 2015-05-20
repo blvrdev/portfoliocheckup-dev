@@ -31,7 +31,21 @@ $(document).ready(function(){
         $("#myModal iframe").attr("src", $("#myModal iframe").attr("src"));
     });
 
-     if(window.location.hash == '#demo-video'){
+    if(window.location.hash == '#demo-video'){
         $('#play').click();
+    }
+    
+    if(window.location.href == "https://www.strongholdfinancial.com/"){
+        $('#warning').click();
+    }
+
+    if(window.location.href == "http://www.strongholdfinancial.com/"){
+        $('#warning').click();  
+    }
+    if(window.location.href == "www.strongholdfinancial.com/"){
+        $('#warning').click();
+    }
+    if(window.location.href == "strongholdfinancial.com/"){
+        $('#warning').click();
     }
 });
