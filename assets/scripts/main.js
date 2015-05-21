@@ -35,17 +35,8 @@ $(document).ready(function(){
         $('#play').click();
     }
     
-    if(window.location.href == "https://www.strongholdfinancial.com/"){
-        $('#warning').click();
-    }
-
-    if(window.location.href == "http://www.strongholdfinancial.com/"){
-        $('#warning').click();  
-    }
-    if(window.location.href == "www.strongholdfinancial.com/"){
-        $('#warning').click();
-    }
-    if(window.location.href == "strongholdfinancial.com/"){
+    var current_domain = document.domain.replace('www.','');    
+    if(document.domain == 'strongholdfinancial.com'){
         $('#warning').click();
     }
 });
