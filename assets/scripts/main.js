@@ -39,4 +39,9 @@ $(document).ready(function(){
     if(current_domain == 'strongholdfinancial.com'){
         $('#warning').click();
     }
+    
+    $('#nav-demo-link').click(function(e){
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: $('#demo_video').offset().top - $('.nav').height() });
+    });
 });
