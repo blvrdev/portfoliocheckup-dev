@@ -37,7 +37,7 @@ $(document).ready(function(){
     
     var current_domain = document.domain.replace('www.','');    
     if(current_domain == 'strongholdfinancial.com'){
-        $('#warning').click();
+        $('#warning-modal').modal('show');
     }
     
     $('#nav-demo-link').click(function(e){
