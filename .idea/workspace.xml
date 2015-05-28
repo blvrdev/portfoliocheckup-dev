@@ -30,7 +30,7 @@
       <file leaf-file-name="_css.less" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/styles/_css.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="13" selection-start="220" selection-end="220" vertical-scroll-proportion="-0.33333334" vertical-offset="204" max-vertical-offset="10013">
+            <state line="42" column="13" selection-start="937" selection-end="937" vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="10489">
               <folding />
             </state>
           </provider>
@@ -39,7 +39,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="191" column="48" selection-start="8166" selection-end="8166" vertical-scroll-proportion="1.6396807" vertical-offset="1809" max-vertical-offset="4267">
+            <state line="166" column="6" selection-start="7492" selection-end="7492" vertical-scroll-proportion="0.39247945" vertical-offset="2488" max-vertical-offset="4641">
               <folding />
             </state>
           </provider>
@@ -48,7 +48,7 @@
       <file leaf-file-name="_base.less" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/styles/_base.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="81" column="27" selection-start="1154" selection-end="1154" vertical-scroll-proportion="-14.529411" vertical-offset="636" max-vertical-offset="1513">
+            <state line="81" column="27" selection-start="1154" selection-end="1154" vertical-scroll-proportion="0.0" vertical-offset="636" max-vertical-offset="1513">
               <folding />
             </state>
           </provider>
@@ -243,7 +243,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2657082" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2028754" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -284,6 +284,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="191" column="48" selection-start="8166" selection-end="8166" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4250">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/styles/_base.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="27" selection-start="1154" selection-end="1154" vertical-scroll-proportion="0.0" vertical-offset="636" max-vertical-offset="1513">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/styles/_css.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="220" selection-end="220" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10013">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="218" column="0" selection-start="9550" selection-end="9550" vertical-scroll-proportion="0.0" vertical-offset="3706" max-vertical-offset="4250">
           <folding />
         </state>
@@ -291,9 +312,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_includes/nav.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="69" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="289">
-          <folding />
-        </state>
+        <state line="5" column="69" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="289" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/styles/_base.less">
@@ -305,9 +324,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_includes/footer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="90" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="289">
-          <folding />
-        </state>
+        <state line="2" column="90" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="289" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/styles/_css.less">
@@ -398,9 +415,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dist/styles/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="24361">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="24361" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/styles/_animate.less">
@@ -430,35 +445,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_includes/nav.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="69" selection-start="229" selection-end="229" vertical-scroll-proportion="0.096921325" vertical-offset="0" max-vertical-offset="877">
-          <folding />
-        </state>
+        <state line="5" column="69" selection-start="229" selection-end="229" vertical-scroll-proportion="0.096921325" vertical-offset="0" max-vertical-offset="877" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/styles/_css.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="220" selection-end="220" vertical-scroll-proportion="-0.33333334" vertical-offset="204" max-vertical-offset="10013">
+        <state line="42" column="13" selection-start="937" selection-end="937" vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="10489">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_includes/footer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="90" selection-start="153" selection-end="153" vertical-scroll-proportion="0.03876853" vertical-offset="0" max-vertical-offset="877">
-          <folding />
-        </state>
+        <state line="2" column="90" selection-start="153" selection-end="153" vertical-scroll-proportion="0.03876853" vertical-offset="0" max-vertical-offset="877" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/styles/_base.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="27" selection-start="1154" selection-end="1154" vertical-scroll-proportion="-14.529411" vertical-offset="636" max-vertical-offset="1513">
+        <state line="81" column="27" selection-start="1154" selection-end="1154" vertical-scroll-proportion="0.0" vertical-offset="636" max-vertical-offset="1513">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="191" column="48" selection-start="8166" selection-end="8166" vertical-scroll-proportion="1.6396807" vertical-offset="1809" max-vertical-offset="4267">
+        <state line="166" column="6" selection-start="7492" selection-end="7492" vertical-scroll-proportion="0.39247945" vertical-offset="2488" max-vertical-offset="4641">
           <folding />
         </state>
       </provider>
