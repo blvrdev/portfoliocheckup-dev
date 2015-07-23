@@ -163,6 +163,11 @@
     p > strong {
         margin-bottom: 75px;
     }
+	p.small {
+		width: 80%;
+		margin-top: 25px;
+		line-height: 18px;
+	}
     .button {
         margin-top: 8px;
     }
@@ -453,6 +458,42 @@ footer {
     padding: 125px 0 125px 0;
 }
 
+#map-div {
+	ul {
+		margin: 25px 0;
+		padding: 0;
+	
+		li {
+			list-style: none;
+			background: url('../images/bullet.png') left center no-repeat;
+			margin: 25px 0;
+			padding-left: 25px;
+		
+			font-size: 18px;
+			line-height: 30px;
+			color: #555555;
+			font-family: 'Avenir W01';
+			font-weight: 400;
+			font-style: normal;
+
+			strong {
+				font-family: 'Avenir W01';
+				font-weight: 900;
+				font-style: normal;
+				color: @blue;
+			}
+		}
+	}
+	
+	img {
+		margin-top: 50px;
+		
+		@media screen and (max-width: 991px) {
+			margin-top: 0;
+		}
+	}
+}
+
 .list {
     text-align: center;
 
@@ -509,7 +550,7 @@ footer {
     .tablet-background {
         background-image: url('../images/tablet.jpg');
         background-repeat: no-repeat;
-        background-position: bottom right;
+        background-position: left bottom;
         width: 80%;
         margin: auto;
     }
