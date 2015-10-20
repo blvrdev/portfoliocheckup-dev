@@ -109,7 +109,7 @@
             font-style: normal;
             font-size: 22px;
             line-height: 30px;
-            margin-bottom: 65px;
+            margin-bottom: 38px;
             color: white;
 
             @media screen and (max-width: 1050px) {
@@ -130,9 +130,12 @@
             background: @orange;
             text-transform: uppercase;
             font-family: 'Avenir W01';
-            font-weight: 900;
+            font-weight: 600;
             font-size: 16px;
-            padding: 12px 50px;
+			margin: 0 10px;
+            padding: 12px 28px;
+			font-weight: 600;
+			letter-spacing: 1.5px;
             border-radius: 36px;
             -webkit-border-radius: 36px;
             border: 2px solid transparent;
@@ -323,8 +326,9 @@ footer {
     text-decoration: none;
     text-transform: uppercase;
     font-family: 'Avenir W01';
-    font-weight: 900;
-    padding: 12px 24px;
+    font-weight: 600;
+    padding: 12px 28px;
+	letter-spacing: 1.5px;	
     border-radius: 36px;
     -webkit-border-radius: 36px;
     border: 2px solid transparent;
@@ -420,11 +424,11 @@ footer {
 }
 
 .btn-blue {
-    background: @blue;
+    background: @blue !important;
     &:hover {
         background: transparent;
-        border: 2px solid @blue;
-        color: @blue;
+        border: 2px solid @blue !important;
+        color: @blue !important;
         text-decoration: none;
     }
 }
