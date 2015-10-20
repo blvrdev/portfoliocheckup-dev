@@ -14,6 +14,18 @@
       ],
       "main": true
     },
+	"signup.css": {
+      "files": [
+        "styles/signup.less"
+      ],
+      "main": true
+    },
+	"signup-video.css": {
+      "files": [
+        "styles/signup-video.less"
+      ],
+      "main": true
+    },
     "jquery.js": {
       "bower": ["jquery"]
     }

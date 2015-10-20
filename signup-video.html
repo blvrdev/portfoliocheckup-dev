@@ -1,0 +1,54 @@
+---
+layout: signup
+---
+<div class="main-container">
+    <div class="center">
+        <h2>Log In for your complimentary consultation</h2>
+    </div>
+    <div class="two-col clearfix">
+        <div class="col-md-6">
+			<form action="https://app.portfoliocheckup.com/login" method="POST" role="form">
+				<input type="hidden" name="redirectLocation" value="/advisors" />
+				<div class="form-group">
+					<input type="text" name="emailAddress" value="" class="form-control" placeholder="Email Address" autofocus="" />
+				</div> 
+				<div class="form-group">
+					<input type="password" name="password" class="form-control" placeholder="Password" />
+				</div>
+				<div class="form-group buttons-set">
+					<button type="submit" class="btn btn-primary">Log in</button>
+					<div class="alt-option">
+						<span class="signup">or <a href="https://app.portfoliocheckup.com/signup">Sign up</a></span><br>
+                        <a href="https://app.portfoliocheckup.com/password/forgot">Forget your password?</a>
+                    </div>
+				</div>
+				
+			</form>
+        </div>
+        <div class="col-md-6 center">
+            <span id="video-text">You Deserve a Portfolio CheckUp</span>
+            <div class="iframe">
+                <iframe src="https://player.vimeo.com/video/139637530" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="map-content clearfix">
+    <div class="center">
+        <h2>More about our network of independent advisors</h2>
+    </div>
+    <div class="map-container">
+        <div class="col-md-6 map-div">
+            <img id="map" src="{{ site.baseurl }}/assets/images/signup-map.png">
+        </div>
+        <div class="col-md-6 map-text">
+            <h3>A second opinion should be first priority</h3>
+            <p>After your free analysis, you will have the chance to be connected to a fiduciary advisor in our national network. We have assembled a highly qualified group of independent fee based advisers which collectively manage over $45 Billion, have 75 offices across the U.S. and includes:</p>
+            <ul class="list">
+                <li>The Barron's #1 and #2 ranked independent advisory firms</li>
+                <li>#1 ranked CNBC fee-only advisor in the country</li>
+                <li>Forbes Top 50 investment advisor in America</li>
+            </ul>
+        </div>
+    </div>
+</div>
